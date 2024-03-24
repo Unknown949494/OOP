@@ -1,5 +1,7 @@
 package oop.labor05.Model;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
@@ -49,5 +51,4 @@ public class Training {
                 ", enrolledStudents=" + enrolledStudents +
                 '}';
     }
-
 }
