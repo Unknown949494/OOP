@@ -7,29 +7,33 @@ public class Date {
     private int month;
     private int day;
 
+    //constructor
+    public Date(int year, int month, int day) {
+        this.year = year;
+        this.month = month;
+        this.day = day;
+    }
+
+    //getter
     public int getYear() {
         return year;
     }
 
+    //getter
     public int getMonth() {
         return month;
     }
 
+    //getter
     public int getDay() {
         return day;
     }
 
-    public void year(int year){this.year = year;}
-
-    public void month(int month){this.month = month; }
-
-    public void day(int day){this.day = day; }
-
-    public boolean isLeapYear(int year){
-        if(day <= 364){
+    //megnezi ha szokoev
+    public boolean isLeapYear() {
+        if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
             return true;
-        }
-        else if(day >364) {
+        } else {
             return false;
         }
     }
