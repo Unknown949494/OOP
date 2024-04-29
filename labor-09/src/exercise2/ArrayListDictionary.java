@@ -9,8 +9,11 @@ import java.util.Scanner;
 import static java.awt.AWTEventMulticaster.add;
 
 public class ArrayListDictionary implements IDictionary {
+
     private ArrayList<String> words=new ArrayList<>();
+
     private static ArrayListDictionary instance;
+
     private ArrayListDictionary(){
         try (Scanner scanner = new Scanner(new File(IDictionary.DICTIONARY_FILE))) {
             while (scanner.hasNextLine()) {
@@ -24,6 +27,7 @@ public class ArrayListDictionary implements IDictionary {
             e.printStackTrace();
         }
     }
+
     public static IDictionary newInstance() {
         if (instance == null) {
             instance = new ArrayListDictionary();

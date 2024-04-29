@@ -3,7 +3,7 @@ package oop.labor09;
 
 import java.util.Random;
 
-public class Main {
+public class Main1 {
     public static void main(String[] args) {
         // Test ArrayListQueue
         IQueue queue = new ArraylistQueue(5);
@@ -27,6 +27,7 @@ public class Main {
         // Test CircularQueue
         IQueue circularQueue = new CircularQueue(5);
         for (int i = 0; i < 100; ++i) {
+
             int value = rnd.nextInt(100);
             if (value < 50) {
                 System.out.println("Add: " + i);

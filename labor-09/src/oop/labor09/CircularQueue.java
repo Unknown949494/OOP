@@ -9,10 +9,12 @@ public class CircularQueue implements IQueue {
         this.capacity = capacity;
         this.front=this.rear=-1;
         items=new Object[capacity];
+
     }
     public boolean isFull(){
         if (front==0 && rear==capacity-1 ){
             return true;
+
         }
         if (front==rear+1){
             return true;

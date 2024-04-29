@@ -5,7 +5,10 @@ public class DictionaryProvider {
         IDictionary dictionary = null;
         switch( dtype ){
             case ARRAY_LIST: dictionary= ArrayListDictionary.newInstance(); break;
+
         }
         return dictionary;
+
     }
+
 }

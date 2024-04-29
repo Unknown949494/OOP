@@ -4,8 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        DictionaryService service =
-                new DictionaryService(DictionaryType.ARRAY_LIST);
+        DictionaryService service = new DictionaryService(DictionaryType.ARRAY_LIST);
         Scanner scanner = new Scanner(System.in);
         while( true ) {
             System.out.print("Word to find ( Enter <end> for exit): ");
@@ -16,6 +15,7 @@ public class Main {
             System.out.println(" Find(" + word + "): " + service.findWord(word));
         }
         scanner.close();
+
         DictionaryService services = new DictionaryService(DictionaryType.ARRAY_LIST);
         System.out.println("Unknown words from a file: ");
         System.out.println( service.findWordsFile(".idea/text_to_find.txt"));

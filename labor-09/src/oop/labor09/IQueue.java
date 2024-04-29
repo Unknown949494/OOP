@@ -6,6 +6,4 @@ public interface IQueue {
     void enQueue(Object item);
     Object deQueue();
     void printQueue();
-
-
 }

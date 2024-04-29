@@ -8,9 +8,11 @@ public class ArraylistQueue implements IQueue {
 
     public ArraylistQueue(int capacity) {
         this.capacity = capacity;
+
     }
     public boolean isEmpty(){
         return items.isEmpty();
+
     }
     public boolean isFull(){
         return items.size()==capacity;
